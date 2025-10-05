@@ -15,87 +15,38 @@ void main() {
             SizedBox(width: 10),
           ],
         ),
-        body: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.all(15),
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: Color(0xff7382BF), width: 2),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  spacing: 10,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        "https://img.freepik.com/free-photo/front-view-man-posing-indoors_23-2149883570.jpg?semt=ais_hybrid&w=740&q=80",
-                      ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              for(int i=0; i<100; i++)
+                Container(
+                  margin: EdgeInsets.all(15),
+                  height: 100,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(color: Color(0xff7382BF), width: 2),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      spacing: 10,
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            "https://img.freepik.com/free-photo/front-view-man-posing-indoors_23-2149883570.jpg?semt=ais_hybrid&w=740&q=80",
+                          ),
+                        ),
+                        Text("Mr. Han Md Mamun Islam",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
+                        Spacer(),
+                        Icon(Icons.call,color: Color(0xff7382BF),),
+                        Icon(Icons.mail_outline_outlined,color: Color(0xff7382BF),),
+                      ],
                     ),
-                    Text("Mr. Han Md Mamun Islam",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
-                    Spacer(),
-                    Icon(Icons.call,color: Color(0xff7382BF),),
-                    Icon(Icons.mail_outline_outlined,color: Color(0xff7382BF),),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(15),
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: Color(0xff7382BF), width: 2),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  spacing: 10,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        "https://img.freepik.com/free-photo/front-view-man-posing-indoors_23-2149883570.jpg?semt=ais_hybrid&w=740&q=80",
-                      ),
-                    ),
-                    Text("Mr. Han Md Mamun Islam",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
-                    Spacer(),
-                    Icon(Icons.call,color: Color(0xff7382BF),),
-                    Icon(Icons.mail_outline_outlined,color: Color(0xff7382BF),),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(15),
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: Color(0xff7382BF), width: 2),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  spacing: 10,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        "https://img.freepik.com/free-photo/front-view-man-posing-indoors_23-2149883570.jpg?semt=ais_hybrid&w=740&q=80",
-                      ),
-                    ),
-                    Text("Mr. Han Md Mamun Islam",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
-                    Spacer(),
-                    Icon(Icons.call,color: Color(0xff7382BF),),
-                    Icon(Icons.mail_outline_outlined,color: Color(0xff7382BF),),
-                  ],
-                ),
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     ),
