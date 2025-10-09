@@ -15,9 +15,7 @@ class _Task1State extends State<Task1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-      ),
+      appBar: AppBar(),
     );
   }
 }
