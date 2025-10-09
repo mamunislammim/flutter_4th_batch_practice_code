@@ -20,602 +20,617 @@ void main() {
           ),
           actions: [Icon(Icons.tune), SizedBox(width: 10)],
         ),
-        body: SingleChildScrollView(
 
-          child: Column(
-            spacing: 10,
-            children: [
-              // Search
-              Container(
-                margin: EdgeInsets.all(15),
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                height: 50,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
+        // body: SingleChildScrollView(
+        //
+        //   child: Column(
+        //     spacing: 10,
+        //     children: [
+        //       // Search
+        //       Container(
+        //         margin: EdgeInsets.all(15),
+        //         padding: EdgeInsets.symmetric(horizontal: 10),
+        //         height: 50,
+        //         width: double.infinity,
+        //         decoration: BoxDecoration(
+        //           color: Colors.white,
+        //           borderRadius: BorderRadius.circular(12),
+        //         ),
+        //         child: Row(spacing: 10, children: [Icon(Icons.search), Text("Search")]),
+        //       ),
+        //
+        //       // categories
+        //       SingleChildScrollView(
+        //         scrollDirection: Axis.horizontal,
+        //         child: Row(
+        //           children: [
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids", style: TextStyle(color: Colors.blue)),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //             Container(
+        //               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+        //               decoration: BoxDecoration(
+        //                 color: Colors.white,
+        //                 borderRadius: BorderRadius.circular(10),
+        //               ),
+        //               child: Text("Baby & Kids"),
+        //             ),
+        //           ],
+        //         ),
+        //       ),
+        //
+        //       // products
+        //       Row(
+        //         children: [
+        //           Stack(
+        //            // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //         ],
+        //       ),
+        //       Row(
+        //         children: [
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //         ],
+        //       ),
+        //       Row(
+        //         children: [
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //         ],
+        //       ),
+        //       Row(
+        //         children: [
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //         ],
+        //       ),
+        //       Row(
+        //         children: [
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //           Stack(
+        //             // clipBehavior: Clip.none,
+        //             children: [
+        //               Card(
+        //                 color: Colors.white,
+        //                 child: Column(
+        //                   crossAxisAlignment: CrossAxisAlignment.center,
+        //                   children: [
+        //                     Image.network(
+        //                       height: 100,
+        //                       width: 100,
+        //                       "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
+        //                     ),
+        //                     Padding(
+        //                       padding: EdgeInsets.all(8.0),
+        //                       child: Column(
+        //                         crossAxisAlignment: CrossAxisAlignment.start,
+        //                         children: [
+        //                           Text("Chips"),
+        //                           Text("Pran Potatosfgfrdgfrg"),
+        //                           Text("150 GM, 500 Pcs"),
+        //                           Row(
+        //                             mainAxisSize: MainAxisSize.min,
+        //                             spacing: 100,
+        //                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //                             children: [
+        //                               Text("\$25"),
+        //                               Container(
+        //                                 padding: EdgeInsets.all(5),
+        //                                 decoration: BoxDecoration(
+        //                                   color: Colors.blueAccent,
+        //                                   borderRadius: BorderRadius.circular(8),
+        //                                 ),
+        //                                 child: Icon(Icons.shopping_cart_checkout, size: 15),
+        //                               ),
+        //                             ],
+        //                           ),
+        //                         ],
+        //                       ),
+        //                     ),
+        //                   ],
+        //                 ),
+        //               ),
+        //               Positioned(
+        //                   top:  10,
+        //                   right: 10,
+        //                   child: Icon(Icons.favorite_border))
+        //             ],
+        //           ),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
+        // ),
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Flexible(flex: 4, child: Text("datadsfvdfgrsdfrgrfdrrfgrrrg")),
+                Expanded(flex: 5, child: Container(height: 100, width: 100, color: Colors.green)),
+                Expanded(
+                  flex: 2,
+                  child: Container(height: 100, width: 100, color: Colors.blueAccent),
                 ),
-                child: Row(spacing: 10, children: [Icon(Icons.search), Text("Search")]),
-              ),
-
-              // categories
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids", style: TextStyle(color: Colors.blue)),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text("Baby & Kids"),
-                    ),
-                  ],
-                ),
-              ),
-
-              // products
-              Row(
-                children: [
-                  Stack(
-                   // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                  Stack(
-                    // clipBehavior: Clip.none,
-                    children: [
-                      Card(
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.network(
-                              height: 100,
-                              width: 100,
-                              "https://i.chaldn.com/_mpimage/haque-potato-chips-15-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D177134&q=best&v=1",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Chips"),
-                                  Text("Pran Potatosfgfrdgfrg"),
-                                  Text("150 GM, 500 Pcs"),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    spacing: 100,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("\$25"),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Icon(Icons.shopping_cart_checkout, size: 15),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                          top:  10,
-                          right: 10,
-                          child: Icon(Icons.favorite_border))
-                    ],
-                  ),
-                ],
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ),
       ),
     ),
