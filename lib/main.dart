@@ -1,5 +1,6 @@
 import 'package:ca/product.dart';
 import 'package:flutter/material.dart';
+import 'counter_screen.dart';
 import 'first_screen.dart';
 
 void main() {
@@ -11,6 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: ProductListScreen());
+    return MaterialApp(
+        theme: ThemeData.light(),
+        debugShowCheckedModeBanner: false, home: CounterScreen());
   }
 }
