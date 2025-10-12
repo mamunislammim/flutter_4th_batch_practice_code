@@ -56,7 +56,7 @@ class _CounterScreenState extends State<CounterScreen> {
                     a++;
                   });
                 },
-                child: Text("Increment"),
+                child: Text(a % 2 == 0 ? "INC" : "Increment"),
               ),
             ],
           ),
