@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'buttons.dart';
 import 'counter_screen.dart';
 import 'first_screen.dart';
+import 'grid.dart';
+import 'gridview_builder.dart';
+import 'list-view_builder.dart';
 import 'list_view.dart';
 
 void main() {
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: ListViewScreen(),
+      home: GridviewBuilderScreen(),
     );
   }
 }
