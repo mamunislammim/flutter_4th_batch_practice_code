@@ -43,11 +43,11 @@ class _GridScreenState extends State<GridScreen> {
       body: GridView(
         shrinkWrap: true,
         padding: EdgeInsets.all(10),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          //crossAxisCount: 2,
           mainAxisSpacing: 15,
           crossAxisSpacing: 50,
-           childAspectRatio: .8
+           childAspectRatio: .8, maxCrossAxisExtent: 10
         ),
         children: [
           Container(height: 100, width: 100, color: Colors.red, child: Text("${f[0]['time']}")),

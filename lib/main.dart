@@ -1,4 +1,5 @@
 import 'package:ca/product.dart';
+import 'package:ca/task_6.dart';
 import 'package:ca/timer.dart';
 import 'package:flutter/material.dart';
 import 'buttons.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: GridviewBuilderScreen(),
+      home: Task6(),
     );
   }
 }

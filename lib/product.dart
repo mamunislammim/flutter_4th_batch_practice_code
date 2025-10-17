@@ -58,7 +58,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color:  Colors.white,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text("Baby & Kids", style: TextStyle(color: Colors.blue)),
