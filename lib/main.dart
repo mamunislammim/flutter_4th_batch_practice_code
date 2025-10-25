@@ -12,6 +12,8 @@ import 'grid.dart';
 import 'gridview_builder.dart';
 import 'list-view_builder.dart';
 import 'list_view.dart';
+import 'login/login.dart';
+import 'login/splash.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: DropdownScreen(),
+      home: SplashScreen(),
     );
   }
 }
