@@ -12,6 +12,8 @@ import 'grid.dart';
 import 'gridview_builder.dart';
 import 'list-view_builder.dart';
 import 'list_view.dart';
+import 'login/home.dart';
+import 'login/home_screen.dart';
 import 'login/login.dart';
 import 'login/splash.dart';
 
@@ -24,10 +26,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.light(),
-      debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-    );
+    return MaterialApp(theme: ThemeData.light(), debugShowCheckedModeBanner: false, home: SplashScreen());
   }
 }

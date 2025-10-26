@@ -1,3 +1,4 @@
+import 'package:ca/login/home.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -65,19 +66,24 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
 
-              Card(
-                color: Color(0xff1B374D),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Text(
-                        "Sign In",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+              InkWell(
+                onTap: () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                },
+                child: Card(
+                  color: Color(0xff1B374D),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Text(
+                          "Sign In",
+                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 
