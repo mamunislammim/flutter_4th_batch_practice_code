@@ -1,3 +1,4 @@
+import 'package:ca/my_package.dart';
 import 'package:ca/product.dart';
 import 'package:ca/switch.dart';
 import 'package:ca/task_6.dart';
@@ -26,6 +27,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeData.light(), debugShowCheckedModeBanner: false, home: SplashScreen());
+    return MaterialApp(theme: ThemeData.light(), debugShowCheckedModeBanner: false, home: MyPackage());
   }
 }

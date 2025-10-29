@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:ca/login/home.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Image.network(
                 "https://static.vecteezy.com/system/resources/thumbnails/011/432/528/small/enter-login-and-password-registration-page-on-screen-sign-in-to-your-account-creative-metaphor-login-page-mobile-app-with-user-page-flat-illustration-vector.jpg",
               ),
-              Text("Login", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
+              const Text("Login", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
               Text("Please Sign in to Continue.", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
               SizedBox(height: 10),
               TextField(
@@ -68,7 +70,52 @@ class _LoginScreenState extends State<LoginScreen> {
 
               InkWell(
                 onTap: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                  log("================");
+                  showDialog(
+                    barrierDismissible: false,
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        shape: OutlineInputBorder(borderRadius: BorderRadius.zero),
+                        title: Text("Alert Dialogue Title"),
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("This is the content of AlertDialogue."),
+                            Text("This is the content of AlertDialogue."),
+                            Text("This is the content of AlertDialogue."),
+                            Text("This is the content of AlertDialogue."),
+                          ],
+                        ),
+                        actions: [
+                          InkWell(
+                            onTap: () {
+                              Navigator.pop(context);
+                            },
+                            child: Card(
+                              color: Colors.blue,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                child: Text("CANCEL", style: TextStyle(color: Colors.white)),
+                              ),
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                            },
+                            child: Card(
+                              color: Colors.blue,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                child: Text("OK", style: TextStyle(color: Colors.white)),
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                  );
                 },
                 child: Card(
                   color: Color(0xff1B374D),

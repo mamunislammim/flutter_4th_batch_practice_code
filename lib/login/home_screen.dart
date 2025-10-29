@@ -8,6 +8,8 @@ class HomeScreen1 extends StatefulWidget {
 }
 
 class _HomeScreen1State extends State<HomeScreen1> {
+  int selectedIndex = 0;
+
   List categoriesIMG = [
     "https://cdn-icons-png.flaticon.com/512/4804/4804069.png",
     "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/electronics-logo-design-template-623352222edecd63e67d0b36eab980b2_screen.jpg?ts=1682643025",
@@ -18,6 +20,66 @@ class _HomeScreen1State extends State<HomeScreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
+      endDrawer: Drawer(
+        child: Column(
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.red),
+              child: Row(children: [Icon(Icons.person, size: 50), Text("data")]),
+            ),
+            Column(
+              spacing: 20,
+              children: [
+                InkWell(
+                  onTap: () {
+                    selectedIndex = 1;
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    color: selectedIndex == 1 ? Colors.grey : null,
+                    child: Row(spacing: 20, children: [Icon(Icons.home), Text("Home")]),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    selectedIndex = 2;
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    color: selectedIndex == 2 ? Colors.grey : null,
+                    child: Row(spacing: 20, children: [Icon(Icons.home), Text("Home")]),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    selectedIndex = 3;
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    color: selectedIndex == 3 ? Colors.grey : null,
+                    child: Row(spacing: 20, children: [Icon(Icons.home), Text("Home")]),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    selectedIndex = 4;
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    color: selectedIndex == 4 ? Colors.grey : null,
+                    child: Row(spacing: 20, children: [Icon(Icons.home), Text("Home")]),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
       body: Column(
         children: [
           Container(
