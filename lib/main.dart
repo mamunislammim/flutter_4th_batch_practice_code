@@ -5,6 +5,7 @@ import 'package:ca/task_6.dart';
 import 'package:ca/text_field.dart';
 import 'package:ca/timer.dart';
 import 'package:flutter/material.dart';
+import 'beauty_app/login.dart';
 import 'buttons.dart';
 import 'counter_screen.dart';
 import 'dropdown_screen.dart';
@@ -27,6 +28,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeData.light(), debugShowCheckedModeBanner: false, home: MyPackage());
+    return MaterialApp(theme: ThemeData.light(), debugShowCheckedModeBanner: false, home: LoginBeautyScreen());
   }
 }

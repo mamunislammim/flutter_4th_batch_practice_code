@@ -26,6 +26,17 @@ flutter:
 
   uses-material-design: true
 
+
+
   assets:
     - assets/
 
+  fonts:
+    - family:  Manrope
+      fonts:
+        - asset: assets/font/MomoSignature-Regular.ttf
+          style : italic
+    - family: Manropesadasd
+      fonts:
+        - asset: assets/font/MomoSignature-Regular.ttf
+          style: italic
